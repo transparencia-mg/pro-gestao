@@ -3,8 +3,8 @@
 Pretende-se apresentar aqui um novo modelo para a construção do novo Portal da Transparência do Estado de Minas Gerais - PdT.
 Este modelo será composto pela divisão do mesmo em dois sistemas distintos, mas interligados, a saber:
 
-  - Uma API (Interface de Programação de Aplicações) responsável pela disponibilização dos dados; e
-  - Uma interface de usuário (front-end) **open-source** responsável por consumir os dados fornecidos pela API e criar vizualizações inteligentes e interativas.
+  - Uma API responsável pela disponibilização dos dados; e
+  - Uma interface de usuário **open-source** responsável por consumir os dados fornecidos pela API e criar vizualizações inteligentes e interativas.
 
 <figure markdown>
   <p class="p-center">Comunicação entre API e interface de usuário</p>
