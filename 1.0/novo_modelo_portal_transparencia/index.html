@@ -311,9 +311,60 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Novo Modelo Portal da Transparência
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Novo Modelo Portal da Transparência
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#construindo-da-api-para-disponibilizacao-dos-dados" class="md-nav__link">
+    Construindo da API para disponibilização dos dados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#construindo-a-interface-grafica-em-um-modelo-open-source" class="md-nav__link">
+    Construindo a interface gráfica em um modelo Open-Source
+  </a>
+  
+    <nav class="md-nav" aria-label="Construindo a interface gráfica em um modelo Open-Source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organizacao-da-equipe-e-acompanhamento-do-projeto" class="md-nav__link">
+    Organização da Equipe e Acompanhamento do Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -354,6 +405,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#construindo-da-api-para-disponibilizacao-dos-dados" class="md-nav__link">
+    Construindo da API para disponibilização dos dados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#construindo-a-interface-grafica-em-um-modelo-open-source" class="md-nav__link">
+    Construindo a interface gráfica em um modelo Open-Source
+  </a>
+  
+    <nav class="md-nav" aria-label="Construindo a interface gráfica em um modelo Open-Source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organizacao-da-equipe-e-acompanhamento-do-projeto" class="md-nav__link">
+    Organização da Equipe e Acompanhamento do Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -376,13 +462,62 @@
 
 
 <h1 id="novo-modelo-portal-da-transparencia">Novo Modelo Portal da Transparência<a class="headerlink" href="#novo-modelo-portal-da-transparencia" title="Permanent link">⚓︎</a></h1>
+<p>Pretende-se apresentar aqui um novo modelo para a construção do novo Portal da Transparência do Estado de Minas Gerais - <abbr title="Portal da Transparência do Estado de Minas Gerais">PdT</abbr>.
+Este modelo será composto pela divisão do mesmo em dois sistemas distintos, mas interligados, a saber:</p>
+<ul>
+<li>Uma <abbr title="Interface de Programação de Aplicações">API</abbr> responsável pela disponibilização dos dados; e</li>
+<li>Uma <abbr title="front-end">interface de usuário</abbr> <strong>open-source</strong> responsável por consumir os dados fornecidos pela <abbr title="Interface de Programação de Aplicações">API</abbr> e criar vizualizações inteligentes e interativas.</li>
+</ul>
+<figure>
+<p class="p-center">Comunicação entre API e interface de usuário</p>
+<p><img align="center" alt="comunicacao_entre_dois_sistemas" src="/assets/images/comunicacao_entre_dois_softwares.png" />
+  </p>
+<figcaption><a href='https://www.programmers.com.br/blog/niveis-de-maturidade-de-uma-api-rest/'>Níveis de maturidade de uma API REST</a></figcaption>
+</figure>
+<p>Mais à frente será apresentado algumas das vantagens em se adotar a abordagem open-source para interface do usuário (front-end) do novo Portal. Também serão apresentadas propostas de condução da evolução do projeto após seu lançamento inicial, considerando as contribuições que o código pode receber ao longo do tempo.</p>
+<h3 id="construindo-da-api-para-disponibilizacao-dos-dados">Construindo da <abbr title="Interface de Programação de Aplicações">API</abbr> para disponibilização dos dados<a class="headerlink" href="#construindo-da-api-para-disponibilizacao-dos-dados" title="Permanent link">⚓︎</a></h3>
+<p>A primeira etapa do modelo é a construção da <abbr title="Interface de Programação de Aplicações">API</abbr>, sendo este o sistema que permitirá a comunicação entre a interface do usuário e os dados.
+Modelo amplamente utilizado para construção de sistemas web, inclusive pelo Governo Federal Brasileiro, como pode ser constatado no seu <a href="https://www.gov.br/conecta/catalogo/apis/">Catálogo Online de APIS</a> e em reportagens recentes<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> demonstrando a expansão das APIs fornecidas pelo Governo Federal para bases de dados grandes e importantes como o <a href="https://www.gov.br/conecta/catalogo/apis/cadunico-servicos">CadÚnico</a>.</p>
+<p>Por ser PRODEMGE a detentora dos sistemas transacionais, bem como de suas bases de dados, do Estado de Minas Gerais acredita-se que o modelo ideal para construção desta <abbr title="Interface de Programação de Aplicações">API</abbr> seja via contratação da mesma.</p>
+<h3 id="construindo-a-interface-grafica-em-um-modelo-open-source">Construindo a interface gráfica em um modelo Open-Source<a class="headerlink" href="#construindo-a-interface-grafica-em-um-modelo-open-source" title="Permanent link">⚓︎</a></h3>
+<p>A segunda etapa do modelo basea-se na construção da interface do usuário (front-end) adotando o modelo open-source.
+Algumas das vantagens em se adotar o modelo open-source:</p>
+<ul>
+<li>Ganhos de escala durante o processo de identificação e correção de erros.
+  Ao disponibilizar o código-fonte do projeto para outros entes da federação, mais olhos estarão analisando o código em busca de erros e vulnerabilidades.
+  Dessa forma, bugs e falhas de segurança podem ser identificados e reportados de maneira mais ágil.
+  <strong>A comunidade também pode contribuir ativamente com correções e soluções alternativas de problemas, o que acelera o processo de resolução dos mesmos e reduzem os custos de desenvolvimento</strong>.</li>
+<li><strong>Melhoria contínua do software</strong>, tento em vista a colaboração/revisão constante do código por parte da comunidade.
+  A diversidade de perspectivas e experiências pode levar a descobertas inovadoras e à implementação de boas práticas de desenvolvimento.</li>
+<li>Flexibilidade.
+  As equipes de desenvolvimento porão adaptar o código-fonte existente de acordo com suas necessidades específicas, evitando a reinvenção da roda e economizando tempo e esforço não só para o Governo do Estado de Minas Gerais mas para qualquer ente que utilize o código-fonte do projeto.</li>
+</ul>
+<p>Vale lembrar que o modelo open-source é o adotado pelo maior projeto de portais de dados abertos do mundo, o CKAN, inclusive utilizado pelo Governo de Minas Gerais no seu portal de dados abertos.</p>
+<h5 id="organizacao-da-equipe-e-acompanhamento-do-projeto">Organização da Equipe e Acompanhamento do Projeto<a class="headerlink" href="#organizacao-da-equipe-e-acompanhamento-do-projeto" title="Permanent link">⚓︎</a></h5>
+<p>Para garantir o acompanhamento adequado da evolução do projeto e o gerenciamento das contribuições recebidas, é importante estabelecer uma estrutura organizacional clara e eficiente. Recomenda-se a criação de um time responsável pelo desenvolvimento e manutenção do Portal da Transparência, composto por desenvolvedores internos e externos.</p>
+<p>Esse time pode ser dividido em diferentes funções, como:</p>
+<p>Líder de projeto: Responsável pela coordenação geral do projeto, estabelecendo metas, prazos e prioridades, além de gerenciar as contribuições recebidas.</p>
+<p>Desenvolvedores principais: Responsáveis pela implementação das funcionalidades principais do Portal da Transparência, trabalhando em estreita colaboração com a equipe externa de desenvolvedores.</p>
+<p>Equipe externa de desenvolvedores: Composta pelos colaboradores da comunidade open-source que desejam contribuir para o projeto. Esses desenvolvedores podem ser atribuídos a tarefas específicas, como correção de bugs, implementação de novos recursos ou revisão do código existente.</p>
+<p>Revisores de código: Encarregados de revisar as contribuições feitas pela comunidade, garantindo a qualidade, consistência e aderência aos padrões de desenvolvimento estabelecidos.</p>
+<p>Gerente de qualidade: Responsável por coordenar os testes e garantir que o software seja lançado com a menor quantidade possível de erros e bugs.</p>
+<p>Conclusão</p>
+<p>A construção de um Portal da Transparência utilizando um modelo open-source traz inúmeras vantagens. A transparência e o controle oferecidos pelo acesso ao código-fonte, juntamente com as contribuições da comunidade de desenvolvedores, resultam em um sistema mais robusto, seguro e confiável. Além disso, a possibilidade de escalar o projeto durante a identificação e correção de bugs, bem como a flexibilidade e personalização proporcionadas pelo modelo open-source, são fatores determinantes para o sucesso do empreendimento. Com uma equipe</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://www.convergenciadigital.com.br/Gestao/Governo-lanca-API-do-CadUnico-com-dados-de-94-milhoes-de-pessoas-63459.html">Governo lança <abbr title="Interface de Programação de Aplicações">API</abbr> do CadÚnico com dados de 94 milhões de pessoas</a> de 15/06/2023.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 23, 2023 13:58:25</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 23, 2023 19:28:03</span>
       
         <br>
         Created:
