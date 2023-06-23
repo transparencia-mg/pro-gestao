@@ -58,6 +58,3 @@ Conclusão
 A construção de um Portal da Transparência utilizando um modelo open-source traz inúmeras vantagens. A transparência e o controle oferecidos pelo acesso ao código-fonte, juntamente com as contribuições da comunidade de desenvolvedores, resultam em um sistema mais robusto, seguro e confiável. Além disso, a possibilidade de escalar o projeto durante a identificação e correção de bugs, bem como a flexibilidade e personalização proporcionadas pelo modelo open-source, são fatores determinantes para o sucesso do empreendimento. Com uma equipe
 
 [^1]: [Governo lança API do CadÚnico com dados de 94 milhões de pessoas](https://www.convergenciadigital.com.br/Gestao/Governo-lanca-API-do-CadUnico-com-dados-de-94-milhoes-de-pessoas-63459.html) de 15/06/2023.
-
-
-
