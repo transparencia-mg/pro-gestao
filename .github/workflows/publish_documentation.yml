@@ -1,0 +1,24 @@
+name: Publish Documentation
+
+on:
+  push:
+    paths:
+      - 'docs/*'
+
+jobs:
+  publish_documentation:
+    runs-on: Ubuntu-20.04
+    steps:
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.10.2
+
+      - name: Check out repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Publish Documentation with mkdocs and mike
+        run: mike deploy --push --update-aliases 1.0 latest
