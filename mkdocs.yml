@@ -6,6 +6,7 @@ repo_url: https://github.com/transparencia-mg/pro-gestao
 edit_uri: edit/main/docs/
 
 nav:
+  - Introdução: index.md
   - Melhorias Portal de Dados Abertos: melhorias_portal_dados_abertos.md
   - Novo Modelo Portal da Transparência: novo_modelo_portal_transparencia.md
   - Funcionalidades novo Portal da Transparência: funcionalidades_novo_portal_transparencia.md
