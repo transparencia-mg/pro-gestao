@@ -8,7 +8,7 @@ Este modelo será composto pela divisão do mesmo em dois sistemas distintos, ma
 
 <figure markdown>
   <p class="p-center">Comunicação entre API e interface de usuário</p>
-  ![comunicacao_entre_dois_sistemas](/assets/images/comunicacao_entre_dois_softwares.png){ align=center }
+  ![comunicacao_entre_dois_sistemas](./assets/images/comunicacao_entre_dois_softwares.png){ align=center }
   <figcaption><a href='https://www.programmers.com.br/blog/niveis-de-maturidade-de-uma-api-rest/'>Níveis de maturidade de uma API REST</a></figcaption>
 </figure>
 
