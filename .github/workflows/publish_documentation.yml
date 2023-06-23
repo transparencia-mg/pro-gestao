@@ -15,13 +15,13 @@ jobs:
         with:
           python-version: 3.10.2
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
       - name: Check out repository
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
       - name: Publish Documentation with mkdocs and mike
         run: mike deploy --push --update-aliases 1.0 latest
