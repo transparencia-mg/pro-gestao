@@ -3,3 +3,4 @@
 *[API]: Interface de Programação de Aplicações
 *[Interface de usuário]: front-end
 *[interface de usuário]: front-end
+*[CGE]: Controladoria Geral do Estado de Minas Gerais
